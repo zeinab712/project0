@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+
+    height: 2500px;
+    font-family:'Times New Roman', Times, serif
+}
+
+/* --------------------------------------challenge--------------------------------------------------- */
+
+.grid{
+
+  background-color: #ddd;
+  padding: 20px;
+  width: 70%;
+  height: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns:repeat(4, minmax(0, 1fr));
+  grid-template-rows:repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.grid div{
+
+  padding:15px ;
+  border-bottom: 3px solid red;
+  line-height: 20px;
+  position: relative;
+}
+
+.item1{
+
+  grid-area: 1/1/2/3;
+ 
+}
+.item3{
+  grid-area: 1/4/4/5;
+}
+.item4{
+   
+  grid-area: 2/1/4/2;
+}
+.item5{
+
+  grid-area: 2/2/3/4;
+}
+.item6{
+
+  grid-area: 3/2/4/4;
+}
+
+.item1 , .item2 , .item4 , .item6 , .item7 , .item9 , .item10{
+
+  background-color: white;
+  color: black;
+}
+
+.item3 , .item5 , .item8{
+
+  background-color: black;
+  color: white;
+}
+
+.grid div h4{
+
+  color: gray;
+}
+.grid div p{
+  font-size: 18px;
+  
+}
+
+.grid div h2{
+
+  font-size: 40px;
+  position: absolute;
+  bottom: 6px;
+  right: 8px;
+  color: rgb(173, 173, 173);
+}
